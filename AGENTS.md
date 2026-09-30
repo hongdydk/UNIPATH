@@ -67,7 +67,7 @@
 
 - Flutter Web·Windows의 화면, 레이아웃, 탐색, 입력 폼, 표, AI 패널 또는 분리 채팅창을
   변경·검토할 때는 `.codex/skills/universitypath-ui-ux-review/SKILL.md`를 사용한다.
-- 상세 UX 기준과 현재 구현/추가 권장 구분은 `docs/web-windows-ux-guidelines.md`를
+- 상세 UX 기준과 현재 구현/추가 권장 구분은 `docs/product-ux.md`를
   단일 원본으로 삼는다. UI 변경으로 검증된 정책이 바뀌면 해당 문서를 함께 갱신한다.
 
 ## 테스트 및 완료 기준

@@ -12,7 +12,7 @@ keeping the Web version accessible at narrower widths.
 ## Source of truth
 
 Before making UI decisions, read
-[`docs/web-windows-ux-guidelines.md`](../../../docs/web-windows-ux-guidelines.md).
+[`docs/product-ux.md`](../../../docs/product-ux.md).
 Treat it as the detailed product UX reference. It distinguishes current behavior
 from additional recommendations; do not represent a recommendation as implemented
 without actually adding and verifying it.
