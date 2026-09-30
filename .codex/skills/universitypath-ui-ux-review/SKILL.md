@@ -38,6 +38,27 @@ without actually adding and verifying it.
   scaling, high contrast, and system theme behavior. Do not introduce custom
   styling that hides focus or relies on color alone.
 
+## Backend and AI RAG stay outside UI work
+
+UI changes do not implement or alter these responsibilities:
+
+- Academic Rule Engine, including personal and official fulfillment
+- School Knowledge RAG and Career/Certificate RAG, including retrieval, filters, and `insufficient_evidence`
+- LLM explanation of a judgment or of retrieved evidence
+- FastAPI routes, schemas, database models, and migrations
+
+The screen sends user input and renders a payload it has already received. It does not calculate graduation status, choose evidence, or fill a missing payload with sample domain data.
+
+## Received data only
+
+Do not hardcode courses, rules, audit rows, document citations, or AI answers as product data. When changing a screen, write only how each received field is shown:
+
+- the response field behind each label, column, status, and empty state
+- loading, error, and success from that payload and the API error shape
+- a personal calculation label only when the received result says it is not an official judgment
+
+Remove hardcoded sample rows on any screen being edited. If the client is not connected yet, show the empty and error states and name the fields that screen will bind.
+
 ## Verification
 
 Choose checks proportional to the change. For layout, table, panel, or window

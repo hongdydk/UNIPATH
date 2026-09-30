@@ -69,6 +69,10 @@
   변경·검토할 때는 `.codex/skills/universitypath-ui-ux-review/SKILL.md`를 사용한다.
 - 상세 UX 기준과 현재 구현/추가 권장 구분은 `docs/product-ux.md`를
   단일 원본으로 삼는다. UI 변경으로 검증된 정책이 바뀌면 해당 문서를 함께 갱신한다.
+- UI 작업은 Academic Rule Engine, School Knowledge RAG, Career/Certificate RAG,
+  LLM 설명, FastAPI·DB 구현을 하지 않는다. 화면은 받은 응답을 표시하고 사용자 입력만 보낸다.
+- 과목, 규칙, 판정, 근거, AI 답변을 화면 코드에 하드코딩하지 않는다. 수신 필드가
+  어떤 라벨·열·상태·빈 화면으로 보이는지만 구현하고, 고친 화면의 샘플 행은 제거한다.
 
 ## 테스트 및 완료 기준
 

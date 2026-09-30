@@ -1,0 +1,15 @@
+---
+description: Flutter UI는 받은 데이터만 표시하고 Rule Engine·RAG·백엔드를 구현하지 않는다
+globs: frontend/**/*.dart
+alwaysApply: false
+---
+
+# 프론트엔드 데이터 표시
+
+UI 변경은 Academic Rule Engine, School Knowledge RAG, Career/Certificate RAG, LLM 설명, FastAPI·DB를 구현하지 않는다.
+
+- 화면은 이미 받은 응답을 그리고, 사용자 입력만 보낸다.
+- 과목, 졸업 규칙, 판정, 문서 근거, AI 답변을 위젯 코드에 하드코딩하지 않는다.
+- 구현에는 수신 필드가 어떤 라벨, 열, 상태, 로딩, 빈 화면, 오류로 보이는지만 적는다.
+- 개인 기준 문구는 응답이 공식 판정이 아니라고 할 때만 표시한다.
+- 수정하는 화면의 샘플 행은 제거한다. API가 아직 없으면 빈 상태와 오류, 그리고 연결할 필드 이름만 둔다.
